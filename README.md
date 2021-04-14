@@ -18,7 +18,7 @@ eksctl delete cluster -f cluster.yaml
 
 To run via terraform ensure that you are in the Terraform directory and run the following:
 
-terraform init - initialise terraform configuartion and draw in modules
+terraform init - initialise terraform configuration and draw in modules
 
 terraform plan - check what resources will be created
 
@@ -26,3 +26,7 @@ terraform apply - Create Infra
 
 terraform destroy - Delete all resources.
 
+
+TODO  - Clean up README
+
+Reference - This repo contains and updated version of this tutorial - https://learnk8s.io/terraform-eks
