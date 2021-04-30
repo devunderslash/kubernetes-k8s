@@ -8,14 +8,14 @@ module "dev_cluster" {
   cluster_name = "dev"
 }
 
-module "staging_cluster" {
-  source = "./cluster"
-  instance_type = "t2.micro"
-  cluster_name = "staging"
-}
+# module "staging_cluster" {
+#   source = "./cluster"
+#   instance_type = "t2.micro"
+#   cluster_name = "staging"
+# }
 
-module "production_cluster" {
-  source = "./cluster"
-  instance_type = "m5.large"
-  cluster_name = "production"
-}
+# module "production_cluster" {
+#   source = "./cluster"
+#   instance_type = "m5.large"
+#   cluster_name = "production"
+# }

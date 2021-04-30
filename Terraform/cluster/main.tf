@@ -11,7 +11,7 @@ provider "kubernetes" {
   cluster_ca_certificate = base64decode(data.aws_eks_cluster.cluster.certificate_authority.0.data)
   token                  = data.aws_eks_cluster_auth.cluster.token
   load_config_file       = false
-  version                = "~> 1.11"
+  # version                = "~> 1.11"
 }
 
 data "aws_availability_zones" "available" {
@@ -84,7 +84,7 @@ resource "aws_iam_policy" "worker_policy" {
 }
 
 provider "helm" {
-  version = "1.3.1"
+  # version = "1.3.1"
   kubernetes {
     host                   = data.aws_eks_cluster.cluster.endpoint
     cluster_ca_certificate = base64decode(data.aws_eks_cluster.cluster.certificate_authority.0.data)

@@ -1,8 +1,14 @@
 # kubernetes-k8s
 
-Requirements:
+The following was created using the Kubernetes tutorial by Kristijan Mitevski - https://learnk8s.io/terraform-eks
 
-eksctl, kubectl and terraform installed. On a mac you can install via Homebrew
+I have updated it so that the Helm chart URLs now point to the correct repos. i have also updated the code a little to leverage a variables.tf to easily update the vaiables.
+
+## Requirements:
+
+eksctl, kubectl and terraform installed. 
+
+On a mac you can install via Homebrew
 
 ## EKSCTL
 
